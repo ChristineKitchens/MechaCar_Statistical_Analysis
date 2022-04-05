@@ -39,17 +39,17 @@ However, the t-test for the Lot 3 data yielded a p-value of 0.04168. Because the
 ![T-Test of Suspension Coil Data - Lot 3](images/lot3_ttest_output.png)
 
 ## Study Design: MechaCar vs Competition
-- Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-  - What metric or metrics are you going to test?
-  - What is the null hypothesis or alternative hypothesis?
-  - What statistical test would you use to test the hypothesis? And why?
-  - What data is needed to run the statistical test?
+  To determine how the MechaCar performs against competitors, a study could be conducted that compares the following metrics: vehicle cost and fuel efficiency. These metrics could be compared across various combinations of manufacturer and vehicle type (e.g. sedan, hybrid, truck, etc).
+  
+  Since the study would involve testing for differences across various group combinations, a two-way ANOVA for each metric would be appropriate to assess differences in cost and fuel efficiency across the manufacturer/type combinations. The null hypothesis for the statisical test would be that there is no statistical difference in metric mean values between the different manufacturer/type groups. The alternative hypothesis would be that there is a difference in metric mean values between some/all of the different manufacturer/type combinations.
+  
+  This study would require a dataset that contains all the aforementioned factors. Further, the data for the metrics being compared would need to be roughly normally distributed to satisfy the requirements for an ANOVA test. The dataset would also need multiple records for each manufacturer/type group to ensure sample groups are represenative.
 
 ## Resources
 - Data
-  - []()
-  - []()
+  - [MechaCar_mpg.csv](data/MechaCar_mpg.csv)
+  - [Suspension_Coil.csv](data/Suspension_Coil.csv)
 - Software
   - R
 - Scripts
-  - []()
+  - [MechaCarChallenge.R](R/MechaCarChallenge.R)
